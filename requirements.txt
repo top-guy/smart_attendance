@@ -1,0 +1,6 @@
+flask
+pandas
+opencv-python
+mediapipe
+deepface
+tf-keras

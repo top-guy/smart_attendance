@@ -1,0 +1,27 @@
+# Python
+__pycache__/
+*.pyc
+*.pyo
+*.egg-info/
+dist/
+build/
+.env
+venv/
+
+# Data files (regenerated at runtime)
+uploads/
+outputs/
+
+# Model files (too large for git)
+face_detection.tflite
+face_landmarker.task
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# OS
+.DS_Store
+Thumbs.db
