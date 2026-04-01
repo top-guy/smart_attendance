@@ -1,1 +1,1003 @@
 timestamp,name,status,behavior
+2026-04-01 13:05:05,Jon Doe,present,normal
+2026-04-01 13:05:05,Sim_Student_2,present,normal
+2026-04-01 13:05:05,Jonah Ishaku,present,normal
+2026-04-01 13:05:05,Jonah Ishaku,present,normal
+2026-04-01 13:05:05,Sim_Student_5,present,normal
+2026-04-01 13:05:05,Jonah Ishaku,present,normal
+2026-04-01 13:05:05,Jonah Ishaku,present,normal
+2026-04-01 13:05:05,Jon Doe,present,normal
+2026-04-01 13:05:05,Sim_Student_9,present,normal
+2026-04-01 13:05:05,Jonah Ishaku,present,normal
+2026-04-01 13:05:05,Jon Doe,present,normal
+2026-04-01 13:05:05,Jonah Ishaku,present,normal
+2026-04-01 13:05:05,Sim_Student_13,present,head_turned
+2026-04-01 13:05:05,Jonah Ishaku,present,normal
+2026-04-01 13:05:05,Sim_Student_15,present,normal
+2026-04-01 13:05:05,Jonah Ishaku,present,normal
+2026-04-01 13:05:05,Jon Doe,present,normal
+2026-04-01 13:05:05,Jon Doe,present,normal
+2026-04-01 13:05:05,Sim_Student_19,present,normal
+2026-04-01 13:05:05,Jon Doe,present,sleeping
+2026-04-01 13:05:05,Jon Doe,present,head_turned
+2026-04-01 13:05:05,Jon Doe,present,normal
+2026-04-01 13:05:05,Jon Doe,present,normal
+2026-04-01 13:05:05,Sim_Student_24,present,normal
+2026-04-01 13:05:05,Jon Doe,present,normal
+2026-04-01 13:05:05,Jon Doe,present,normal
+2026-04-01 13:05:05,Jonah Ishaku,present,normal
+2026-04-01 13:05:05,Jonah Ishaku,present,normal
+2026-04-01 13:05:05,Jon Doe,present,normal
+2026-04-01 13:05:05,Jonah Ishaku,present,normal
+2026-04-01 13:05:05,Jonah Ishaku,present,normal
+2026-04-01 13:05:05,Jon Doe,present,head_turned
+2026-04-01 13:05:05,Jonah Ishaku,present,sleeping
+2026-04-01 13:05:05,Sim_Student_34,present,normal
+2026-04-01 13:05:05,Jon Doe,present,normal
+2026-04-01 13:05:05,Jon Doe,present,normal
+2026-04-01 13:05:05,Sim_Student_37,present,sleeping
+2026-04-01 13:05:05,Jon Doe,present,normal
+2026-04-01 13:05:05,Jonah Ishaku,present,normal
+2026-04-01 13:05:05,Sim_Student_40,present,head_turned
+2026-04-01 13:05:05,Jon Doe,present,normal
+2026-04-01 13:05:05,Sim_Student_42,present,normal
+2026-04-01 13:05:05,Jon Doe,present,normal
+2026-04-01 13:05:05,Jonah Ishaku,present,normal
+2026-04-01 13:05:05,Jonah Ishaku,present,normal
+2026-04-01 13:05:05,Jonah Ishaku,present,normal
+2026-04-01 13:05:05,Jonah Ishaku,present,normal
+2026-04-01 13:05:05,Sim_Student_48,present,normal
+2026-04-01 13:05:05,Jonah Ishaku,present,normal
+2026-04-01 13:05:05,Jon Doe,present,head_turned
+2026-04-01 13:05:05,Jonah Ishaku,present,normal
+2026-04-01 13:05:05,Jonah Ishaku,present,normal
+2026-04-01 13:05:05,Jonah Ishaku,present,head_turned
+2026-04-01 13:05:05,Jonah Ishaku,present,normal
+2026-04-01 13:05:05,Jonah Ishaku,present,normal
+2026-04-01 13:05:05,Sim_Student_56,present,sleeping
+2026-04-01 13:05:05,Sim_Student_57,present,normal
+2026-04-01 13:05:05,Jonah Ishaku,present,normal
+2026-04-01 13:05:05,Jonah Ishaku,present,normal
+2026-04-01 13:05:05,Jon Doe,present,normal
+2026-04-01 13:05:05,Jonah Ishaku,present,normal
+2026-04-01 13:05:05,Jon Doe,present,normal
+2026-04-01 13:05:05,Jon Doe,present,normal
+2026-04-01 13:05:05,Jonah Ishaku,present,sleeping
+2026-04-01 13:05:05,Sim_Student_65,present,normal
+2026-04-01 13:05:05,Sim_Student_66,present,head_turned
+2026-04-01 13:05:05,Jonah Ishaku,present,head_turned
+2026-04-01 13:05:05,Jonah Ishaku,present,normal
+2026-04-01 13:05:05,Jonah Ishaku,present,normal
+2026-04-01 13:05:05,Jonah Ishaku,present,normal
+2026-04-01 13:05:05,Jonah Ishaku,present,sleeping
+2026-04-01 13:05:05,Sim_Student_72,present,normal
+2026-04-01 13:05:05,Jon Doe,present,normal
+2026-04-01 13:05:05,Sim_Student_74,present,sleeping
+2026-04-01 13:05:05,Sim_Student_75,present,head_turned
+2026-04-01 13:05:05,Sim_Student_76,present,normal
+2026-04-01 13:05:05,Jonah Ishaku,present,normal
+2026-04-01 13:05:05,Jonah Ishaku,present,normal
+2026-04-01 13:05:05,Jonah Ishaku,present,sleeping
+2026-04-01 13:05:05,Sim_Student_80,present,normal
+2026-04-01 13:05:05,Jon Doe,present,normal
+2026-04-01 13:05:05,Jonah Ishaku,present,normal
+2026-04-01 13:05:05,Sim_Student_83,present,normal
+2026-04-01 13:05:05,Jonah Ishaku,present,normal
+2026-04-01 13:05:05,Jon Doe,present,normal
+2026-04-01 13:05:05,Jonah Ishaku,present,normal
+2026-04-01 13:05:05,Sim_Student_87,present,normal
+2026-04-01 13:05:05,Sim_Student_88,present,normal
+2026-04-01 13:05:05,Jon Doe,present,normal
+2026-04-01 13:05:05,Jon Doe,present,normal
+2026-04-01 13:05:05,Jonah Ishaku,present,normal
+2026-04-01 13:05:05,Jon Doe,present,sleeping
+2026-04-01 13:05:05,Jonah Ishaku,present,head_turned
+2026-04-01 13:05:05,Jon Doe,present,normal
+2026-04-01 13:05:05,Jonah Ishaku,present,normal
+2026-04-01 13:05:05,Jonah Ishaku,present,sleeping
+2026-04-01 13:05:05,Jonah Ishaku,present,normal
+2026-04-01 13:05:05,Jon Doe,present,sleeping
+2026-04-01 13:05:05,Jon Doe,present,normal
+2026-04-01 13:05:05,Sim_Student_100,present,sleeping
+2026-04-01 13:05:05,Jonah Ishaku,present,normal
+2026-04-01 13:05:05,Sim_Student_102,present,sleeping
+2026-04-01 13:05:05,Jonah Ishaku,present,normal
+2026-04-01 13:05:05,Sim_Student_104,present,normal
+2026-04-01 13:05:05,Sim_Student_105,present,normal
+2026-04-01 13:05:05,Jonah Ishaku,present,normal
+2026-04-01 13:05:05,Jon Doe,present,normal
+2026-04-01 13:05:05,Jon Doe,present,head_turned
+2026-04-01 13:05:05,Jonah Ishaku,present,normal
+2026-04-01 13:05:05,Jon Doe,present,normal
+2026-04-01 13:05:05,Sim_Student_111,present,normal
+2026-04-01 13:05:05,Jonah Ishaku,present,sleeping
+2026-04-01 13:05:05,Jonah Ishaku,present,normal
+2026-04-01 13:05:05,Jonah Ishaku,present,head_turned
+2026-04-01 13:05:05,Jonah Ishaku,present,normal
+2026-04-01 13:05:05,Jon Doe,present,sleeping
+2026-04-01 13:05:05,Jon Doe,present,normal
+2026-04-01 13:05:05,Jonah Ishaku,present,normal
+2026-04-01 13:05:05,Jon Doe,present,normal
+2026-04-01 13:05:05,Jon Doe,present,normal
+2026-04-01 13:05:05,Jonah Ishaku,present,head_turned
+2026-04-01 13:05:05,Sim_Student_122,present,normal
+2026-04-01 13:05:05,Sim_Student_123,present,normal
+2026-04-01 13:05:05,Sim_Student_124,present,normal
+2026-04-01 13:05:05,Sim_Student_125,present,normal
+2026-04-01 13:05:05,Jon Doe,present,normal
+2026-04-01 13:05:05,Jonah Ishaku,present,normal
+2026-04-01 13:05:05,Sim_Student_128,present,normal
+2026-04-01 13:05:05,Sim_Student_129,present,sleeping
+2026-04-01 13:05:05,Jonah Ishaku,present,normal
+2026-04-01 13:05:05,Jonah Ishaku,present,normal
+2026-04-01 13:05:05,Jonah Ishaku,present,normal
+2026-04-01 13:05:05,Sim_Student_133,present,normal
+2026-04-01 13:05:05,Sim_Student_134,present,normal
+2026-04-01 13:05:05,Jonah Ishaku,present,sleeping
+2026-04-01 13:05:05,Jonah Ishaku,present,normal
+2026-04-01 13:05:05,Jon Doe,present,normal
+2026-04-01 13:05:05,Jon Doe,present,normal
+2026-04-01 13:05:05,Sim_Student_139,present,normal
+2026-04-01 13:05:05,Jon Doe,present,normal
+2026-04-01 13:05:05,Sim_Student_141,present,normal
+2026-04-01 13:05:05,Jon Doe,present,normal
+2026-04-01 13:05:05,Jon Doe,present,normal
+2026-04-01 13:05:05,Sim_Student_144,present,normal
+2026-04-01 13:05:05,Jonah Ishaku,present,normal
+2026-04-01 13:05:05,Jon Doe,present,normal
+2026-04-01 13:05:05,Jonah Ishaku,present,normal
+2026-04-01 13:05:05,Jon Doe,present,normal
+2026-04-01 13:05:05,Sim_Student_149,present,normal
+2026-04-01 13:05:05,Jonah Ishaku,present,normal
+2026-04-01 13:05:05,Jon Doe,present,normal
+2026-04-01 13:05:05,Jonah Ishaku,present,sleeping
+2026-04-01 13:05:05,Jonah Ishaku,present,normal
+2026-04-01 13:05:05,Jonah Ishaku,present,normal
+2026-04-01 13:05:05,Jon Doe,present,normal
+2026-04-01 13:05:05,Sim_Student_156,present,normal
+2026-04-01 13:05:05,Jonah Ishaku,present,normal
+2026-04-01 13:05:05,Jonah Ishaku,present,normal
+2026-04-01 13:05:05,Jon Doe,present,head_turned
+2026-04-01 13:05:05,Jon Doe,present,normal
+2026-04-01 13:05:05,Jon Doe,present,normal
+2026-04-01 13:05:05,Jonah Ishaku,present,sleeping
+2026-04-01 13:05:05,Jonah Ishaku,present,normal
+2026-04-01 13:05:05,Sim_Student_164,present,normal
+2026-04-01 13:05:05,Jonah Ishaku,present,normal
+2026-04-01 13:05:05,Sim_Student_166,present,normal
+2026-04-01 13:05:05,Jon Doe,present,normal
+2026-04-01 13:05:05,Sim_Student_168,present,normal
+2026-04-01 13:05:05,Jonah Ishaku,present,normal
+2026-04-01 13:05:05,Sim_Student_170,present,head_turned
+2026-04-01 13:05:05,Sim_Student_171,present,normal
+2026-04-01 13:05:05,Sim_Student_172,present,normal
+2026-04-01 13:05:05,Jon Doe,present,normal
+2026-04-01 13:05:05,Jon Doe,present,normal
+2026-04-01 13:05:05,Jon Doe,present,normal
+2026-04-01 13:05:05,Sim_Student_176,present,sleeping
+2026-04-01 13:05:05,Sim_Student_177,present,normal
+2026-04-01 13:05:05,Jon Doe,present,sleeping
+2026-04-01 13:05:05,Sim_Student_179,present,normal
+2026-04-01 13:05:05,Sim_Student_180,present,normal
+2026-04-01 13:05:05,Jon Doe,present,normal
+2026-04-01 13:05:05,Jon Doe,present,normal
+2026-04-01 13:05:05,Jon Doe,present,normal
+2026-04-01 13:05:05,Sim_Student_184,present,sleeping
+2026-04-01 13:05:05,Jon Doe,present,normal
+2026-04-01 13:05:05,Sim_Student_186,present,normal
+2026-04-01 13:05:05,Jonah Ishaku,present,normal
+2026-04-01 13:05:05,Sim_Student_188,present,normal
+2026-04-01 13:05:05,Jonah Ishaku,present,head_turned
+2026-04-01 13:05:05,Sim_Student_190,present,normal
+2026-04-01 13:05:05,Jon Doe,present,head_turned
+2026-04-01 13:05:05,Jon Doe,present,normal
+2026-04-01 13:05:05,Sim_Student_193,present,head_turned
+2026-04-01 13:05:05,Jonah Ishaku,present,normal
+2026-04-01 13:05:05,Sim_Student_195,present,normal
+2026-04-01 13:05:05,Sim_Student_196,present,normal
+2026-04-01 13:05:05,Jonah Ishaku,present,head_turned
+2026-04-01 13:05:05,Jon Doe,present,head_turned
+2026-04-01 13:05:05,Sim_Student_199,present,normal
+2026-04-01 13:05:05,Jonah Ishaku,present,normal
+2026-04-01 13:05:05,Sim_Student_201,present,normal
+2026-04-01 13:05:05,Sim_Student_202,present,normal
+2026-04-01 13:05:05,Sim_Student_203,present,head_turned
+2026-04-01 13:05:05,Jon Doe,present,normal
+2026-04-01 13:05:05,Jonah Ishaku,present,sleeping
+2026-04-01 13:05:05,Sim_Student_206,present,head_turned
+2026-04-01 13:05:05,Jonah Ishaku,present,normal
+2026-04-01 13:05:05,Jon Doe,present,normal
+2026-04-01 13:05:05,Jonah Ishaku,present,normal
+2026-04-01 13:05:05,Jon Doe,present,normal
+2026-04-01 13:05:05,Jonah Ishaku,present,head_turned
+2026-04-01 13:05:05,Sim_Student_212,present,normal
+2026-04-01 13:05:05,Sim_Student_213,present,normal
+2026-04-01 13:05:05,Jonah Ishaku,present,head_turned
+2026-04-01 13:05:05,Jonah Ishaku,present,normal
+2026-04-01 13:05:05,Jon Doe,present,normal
+2026-04-01 13:05:05,Sim_Student_217,present,head_turned
+2026-04-01 13:05:05,Jon Doe,present,normal
+2026-04-01 13:05:05,Jonah Ishaku,present,normal
+2026-04-01 13:05:05,Jonah Ishaku,present,normal
+2026-04-01 13:05:05,Sim_Student_221,present,normal
+2026-04-01 13:05:05,Jon Doe,present,normal
+2026-04-01 13:05:05,Sim_Student_223,present,normal
+2026-04-01 13:05:05,Sim_Student_224,present,normal
+2026-04-01 13:05:05,Jonah Ishaku,present,normal
+2026-04-01 13:05:05,Jonah Ishaku,present,normal
+2026-04-01 13:05:05,Jon Doe,present,normal
+2026-04-01 13:05:05,Jon Doe,present,normal
+2026-04-01 13:05:05,Sim_Student_229,present,sleeping
+2026-04-01 13:05:05,Jonah Ishaku,present,normal
+2026-04-01 13:05:05,Jonah Ishaku,present,normal
+2026-04-01 13:05:05,Sim_Student_232,present,sleeping
+2026-04-01 13:05:05,Jonah Ishaku,present,normal
+2026-04-01 13:05:05,Jon Doe,present,normal
+2026-04-01 13:05:05,Sim_Student_235,present,normal
+2026-04-01 13:05:05,Jonah Ishaku,present,normal
+2026-04-01 13:05:05,Jonah Ishaku,present,normal
+2026-04-01 13:05:05,Jonah Ishaku,present,normal
+2026-04-01 13:05:05,Jonah Ishaku,present,head_turned
+2026-04-01 13:05:05,Jon Doe,present,normal
+2026-04-01 13:05:05,Sim_Student_241,present,head_turned
+2026-04-01 13:05:05,Jon Doe,present,normal
+2026-04-01 13:05:05,Sim_Student_243,present,normal
+2026-04-01 13:05:05,Jonah Ishaku,present,normal
+2026-04-01 13:05:05,Jon Doe,present,normal
+2026-04-01 13:05:05,Sim_Student_246,present,normal
+2026-04-01 13:05:05,Jon Doe,present,normal
+2026-04-01 13:05:05,Jon Doe,present,normal
+2026-04-01 13:05:05,Jonah Ishaku,present,normal
+2026-04-01 13:05:05,Jon Doe,present,head_turned
+2026-04-01 13:05:05,Jonah Ishaku,present,normal
+2026-04-01 13:05:05,Sim_Student_252,present,normal
+2026-04-01 13:05:05,Jonah Ishaku,present,normal
+2026-04-01 13:05:05,Jon Doe,present,normal
+2026-04-01 13:05:05,Jonah Ishaku,present,normal
+2026-04-01 13:05:05,Jonah Ishaku,present,head_turned
+2026-04-01 13:05:05,Sim_Student_257,present,normal
+2026-04-01 13:05:05,Jon Doe,present,normal
+2026-04-01 13:05:05,Jon Doe,present,normal
+2026-04-01 13:05:05,Jon Doe,present,normal
+2026-04-01 13:05:05,Jonah Ishaku,present,head_turned
+2026-04-01 13:05:05,Jon Doe,present,head_turned
+2026-04-01 13:05:05,Jonah Ishaku,present,normal
+2026-04-01 13:05:05,Jon Doe,present,normal
+2026-04-01 13:05:05,Sim_Student_265,present,head_turned
+2026-04-01 13:05:05,Jon Doe,present,normal
+2026-04-01 13:05:05,Jon Doe,present,sleeping
+2026-04-01 13:05:05,Sim_Student_268,present,normal
+2026-04-01 13:05:05,Sim_Student_269,present,sleeping
+2026-04-01 13:05:05,Jon Doe,present,normal
+2026-04-01 13:05:05,Jon Doe,present,normal
+2026-04-01 13:05:05,Jonah Ishaku,present,normal
+2026-04-01 13:05:05,Sim_Student_273,present,normal
+2026-04-01 13:05:05,Jon Doe,present,normal
+2026-04-01 13:05:05,Jonah Ishaku,present,normal
+2026-04-01 13:05:05,Jonah Ishaku,present,normal
+2026-04-01 13:05:05,Jon Doe,present,normal
+2026-04-01 13:05:05,Jonah Ishaku,present,normal
+2026-04-01 13:05:05,Sim_Student_279,present,normal
+2026-04-01 13:05:05,Sim_Student_280,present,normal
+2026-04-01 13:05:05,Jonah Ishaku,present,normal
+2026-04-01 13:05:05,Sim_Student_282,present,normal
+2026-04-01 13:05:05,Jon Doe,present,normal
+2026-04-01 13:05:05,Sim_Student_284,present,normal
+2026-04-01 13:05:05,Jon Doe,present,normal
+2026-04-01 13:05:05,Jonah Ishaku,present,normal
+2026-04-01 13:05:05,Jon Doe,present,normal
+2026-04-01 13:05:05,Jon Doe,present,normal
+2026-04-01 13:05:05,Jon Doe,present,normal
+2026-04-01 13:05:05,Jon Doe,present,normal
+2026-04-01 13:05:05,Sim_Student_291,present,sleeping
+2026-04-01 13:05:05,Jon Doe,present,normal
+2026-04-01 13:05:05,Jon Doe,present,normal
+2026-04-01 13:05:05,Jonah Ishaku,present,normal
+2026-04-01 13:05:05,Sim_Student_295,present,normal
+2026-04-01 13:05:05,Sim_Student_296,present,normal
+2026-04-01 13:05:05,Sim_Student_297,present,normal
+2026-04-01 13:05:05,Jon Doe,present,normal
+2026-04-01 13:05:05,Jon Doe,present,normal
+2026-04-01 13:05:05,Jonah Ishaku,present,normal
+2026-04-01 13:05:05,Jon Doe,present,normal
+2026-04-01 13:05:05,Sim_Student_302,present,normal
+2026-04-01 13:05:05,Sim_Student_303,present,normal
+2026-04-01 13:05:05,Sim_Student_304,present,head_turned
+2026-04-01 13:05:05,Sim_Student_305,present,normal
+2026-04-01 13:05:05,Jon Doe,present,normal
+2026-04-01 13:05:05,Jon Doe,present,normal
+2026-04-01 13:05:05,Jon Doe,present,normal
+2026-04-01 13:05:05,Sim_Student_309,present,normal
+2026-04-01 13:05:05,Jon Doe,present,sleeping
+2026-04-01 13:05:05,Jon Doe,present,normal
+2026-04-01 13:05:05,Jon Doe,present,normal
+2026-04-01 13:05:05,Sim_Student_313,present,normal
+2026-04-01 13:05:05,Jon Doe,present,normal
+2026-04-01 13:05:05,Sim_Student_315,present,normal
+2026-04-01 13:05:05,Jonah Ishaku,present,normal
+2026-04-01 13:05:05,Jonah Ishaku,present,normal
+2026-04-01 13:05:05,Sim_Student_318,present,normal
+2026-04-01 13:05:05,Sim_Student_319,present,normal
+2026-04-01 13:05:05,Jonah Ishaku,present,normal
+2026-04-01 13:05:05,Jonah Ishaku,present,normal
+2026-04-01 13:05:05,Jonah Ishaku,present,normal
+2026-04-01 13:05:05,Jonah Ishaku,present,normal
+2026-04-01 13:05:05,Jonah Ishaku,present,normal
+2026-04-01 13:05:05,Sim_Student_325,present,head_turned
+2026-04-01 13:05:05,Jon Doe,present,normal
+2026-04-01 13:05:05,Jonah Ishaku,present,normal
+2026-04-01 13:05:05,Sim_Student_328,present,normal
+2026-04-01 13:05:05,Jon Doe,present,normal
+2026-04-01 13:05:05,Jonah Ishaku,present,normal
+2026-04-01 13:05:05,Jon Doe,present,normal
+2026-04-01 13:05:05,Sim_Student_332,present,normal
+2026-04-01 13:05:05,Sim_Student_333,present,normal
+2026-04-01 13:05:05,Jonah Ishaku,present,normal
+2026-04-01 13:05:05,Jonah Ishaku,present,normal
+2026-04-01 13:05:05,Jonah Ishaku,present,normal
+2026-04-01 13:05:05,Jonah Ishaku,present,normal
+2026-04-01 13:05:05,Jonah Ishaku,present,normal
+2026-04-01 13:05:05,Jon Doe,present,normal
+2026-04-01 13:05:05,Jon Doe,present,normal
+2026-04-01 13:05:05,Sim_Student_341,present,normal
+2026-04-01 13:05:05,Jon Doe,present,normal
+2026-04-01 13:05:05,Jonah Ishaku,present,normal
+2026-04-01 13:05:05,Jon Doe,present,normal
+2026-04-01 13:05:05,Jonah Ishaku,present,normal
+2026-04-01 13:05:05,Jonah Ishaku,present,normal
+2026-04-01 13:05:05,Jonah Ishaku,present,normal
+2026-04-01 13:05:05,Jonah Ishaku,present,normal
+2026-04-01 13:05:05,Jon Doe,present,normal
+2026-04-01 13:05:05,Jon Doe,present,normal
+2026-04-01 13:05:05,Sim_Student_351,present,head_turned
+2026-04-01 13:05:05,Jon Doe,present,sleeping
+2026-04-01 13:05:05,Jonah Ishaku,present,normal
+2026-04-01 13:05:05,Sim_Student_354,present,normal
+2026-04-01 13:05:05,Jonah Ishaku,present,normal
+2026-04-01 13:05:05,Jon Doe,present,normal
+2026-04-01 13:05:05,Jonah Ishaku,present,normal
+2026-04-01 13:05:05,Sim_Student_358,present,normal
+2026-04-01 13:05:05,Jonah Ishaku,present,head_turned
+2026-04-01 13:05:05,Jon Doe,present,normal
+2026-04-01 13:05:05,Jonah Ishaku,present,normal
+2026-04-01 13:05:05,Jonah Ishaku,present,head_turned
+2026-04-01 13:05:05,Sim_Student_363,present,head_turned
+2026-04-01 13:05:05,Jon Doe,present,normal
+2026-04-01 13:05:05,Jonah Ishaku,present,normal
+2026-04-01 13:05:05,Jon Doe,present,normal
+2026-04-01 13:05:05,Jon Doe,present,normal
+2026-04-01 13:05:05,Jonah Ishaku,present,normal
+2026-04-01 13:05:05,Sim_Student_369,present,normal
+2026-04-01 13:05:05,Jonah Ishaku,present,normal
+2026-04-01 13:05:05,Jon Doe,present,normal
+2026-04-01 13:05:05,Jon Doe,present,normal
+2026-04-01 13:05:05,Sim_Student_373,present,head_turned
+2026-04-01 13:05:05,Sim_Student_374,present,normal
+2026-04-01 13:05:05,Jonah Ishaku,present,normal
+2026-04-01 13:05:05,Jonah Ishaku,present,head_turned
+2026-04-01 13:05:05,Jon Doe,present,normal
+2026-04-01 13:05:05,Jonah Ishaku,present,sleeping
+2026-04-01 13:05:05,Jon Doe,present,normal
+2026-04-01 13:05:05,Jon Doe,present,normal
+2026-04-01 13:05:05,Sim_Student_381,present,normal
+2026-04-01 13:05:05,Jon Doe,present,normal
+2026-04-01 13:05:05,Jon Doe,present,normal
+2026-04-01 13:05:05,Jon Doe,present,normal
+2026-04-01 13:05:05,Jon Doe,present,normal
+2026-04-01 13:05:05,Jon Doe,present,normal
+2026-04-01 13:05:05,Jonah Ishaku,present,sleeping
+2026-04-01 13:05:05,Jon Doe,present,head_turned
+2026-04-01 13:05:05,Jonah Ishaku,present,normal
+2026-04-01 13:05:05,Jon Doe,present,normal
+2026-04-01 13:05:05,Jon Doe,present,normal
+2026-04-01 13:05:05,Jonah Ishaku,present,normal
+2026-04-01 13:05:05,Jon Doe,present,head_turned
+2026-04-01 13:05:05,Jonah Ishaku,present,normal
+2026-04-01 13:05:05,Jon Doe,present,normal
+2026-04-01 13:05:05,Jon Doe,present,normal
+2026-04-01 13:05:05,Sim_Student_397,present,normal
+2026-04-01 13:05:05,Jonah Ishaku,present,normal
+2026-04-01 13:05:05,Jon Doe,present,sleeping
+2026-04-01 13:05:05,Jonah Ishaku,present,normal
+2026-04-01 13:05:05,Sim_Student_401,present,normal
+2026-04-01 13:05:05,Jonah Ishaku,present,normal
+2026-04-01 13:05:05,Jon Doe,present,normal
+2026-04-01 13:05:05,Sim_Student_404,present,normal
+2026-04-01 13:05:05,Sim_Student_405,present,normal
+2026-04-01 13:05:05,Jon Doe,present,normal
+2026-04-01 13:05:05,Jon Doe,present,head_turned
+2026-04-01 13:05:05,Jonah Ishaku,present,normal
+2026-04-01 13:05:05,Jonah Ishaku,present,normal
+2026-04-01 13:05:05,Jon Doe,present,head_turned
+2026-04-01 13:05:05,Jon Doe,present,sleeping
+2026-04-01 13:05:05,Jonah Ishaku,present,normal
+2026-04-01 13:05:05,Jonah Ishaku,present,sleeping
+2026-04-01 13:05:05,Sim_Student_414,present,normal
+2026-04-01 13:05:05,Sim_Student_415,present,sleeping
+2026-04-01 13:05:05,Jon Doe,present,normal
+2026-04-01 13:05:05,Sim_Student_417,present,normal
+2026-04-01 13:05:05,Sim_Student_418,present,normal
+2026-04-01 13:05:05,Sim_Student_419,present,normal
+2026-04-01 13:05:05,Jon Doe,present,normal
+2026-04-01 13:05:05,Sim_Student_421,present,head_turned
+2026-04-01 13:05:05,Jon Doe,present,sleeping
+2026-04-01 13:05:05,Jon Doe,present,normal
+2026-04-01 13:05:05,Jon Doe,present,normal
+2026-04-01 13:05:05,Jonah Ishaku,present,sleeping
+2026-04-01 13:05:05,Jonah Ishaku,present,head_turned
+2026-04-01 13:05:05,Jonah Ishaku,present,normal
+2026-04-01 13:05:05,Jonah Ishaku,present,normal
+2026-04-01 13:05:05,Jonah Ishaku,present,head_turned
+2026-04-01 13:05:05,Jon Doe,present,normal
+2026-04-01 13:05:05,Jonah Ishaku,present,normal
+2026-04-01 13:05:05,Jonah Ishaku,present,normal
+2026-04-01 13:05:05,Jonah Ishaku,present,normal
+2026-04-01 13:05:05,Sim_Student_434,present,normal
+2026-04-01 13:05:05,Sim_Student_435,present,normal
+2026-04-01 13:05:05,Sim_Student_436,present,normal
+2026-04-01 13:05:05,Sim_Student_437,present,sleeping
+2026-04-01 13:05:05,Jonah Ishaku,present,normal
+2026-04-01 13:05:05,Jonah Ishaku,present,normal
+2026-04-01 13:05:05,Jonah Ishaku,present,normal
+2026-04-01 13:05:05,Sim_Student_441,present,normal
+2026-04-01 13:05:05,Sim_Student_442,present,normal
+2026-04-01 13:05:05,Jon Doe,present,head_turned
+2026-04-01 13:05:05,Sim_Student_444,present,normal
+2026-04-01 13:05:05,Jonah Ishaku,present,normal
+2026-04-01 13:05:05,Jon Doe,present,normal
+2026-04-01 13:05:05,Jonah Ishaku,present,normal
+2026-04-01 13:05:05,Jonah Ishaku,present,normal
+2026-04-01 13:05:05,Sim_Student_449,present,normal
+2026-04-01 13:05:05,Jon Doe,present,normal
+2026-04-01 13:05:05,Jon Doe,present,normal
+2026-04-01 13:05:05,Jonah Ishaku,present,normal
+2026-04-01 13:05:05,Jon Doe,present,normal
+2026-04-01 13:05:05,Jon Doe,present,normal
+2026-04-01 13:05:05,Jonah Ishaku,present,normal
+2026-04-01 13:05:05,Sim_Student_456,present,normal
+2026-04-01 13:05:05,Jon Doe,present,normal
+2026-04-01 13:05:05,Jonah Ishaku,present,normal
+2026-04-01 13:05:05,Sim_Student_459,present,normal
+2026-04-01 13:05:05,Jon Doe,present,normal
+2026-04-01 13:05:05,Sim_Student_461,present,normal
+2026-04-01 13:05:05,Jonah Ishaku,present,sleeping
+2026-04-01 13:05:05,Jon Doe,present,sleeping
+2026-04-01 13:05:05,Jon Doe,present,normal
+2026-04-01 13:05:05,Sim_Student_465,present,normal
+2026-04-01 13:05:05,Sim_Student_466,present,head_turned
+2026-04-01 13:05:05,Jon Doe,present,sleeping
+2026-04-01 13:05:05,Sim_Student_468,present,normal
+2026-04-01 13:05:05,Jon Doe,present,head_turned
+2026-04-01 13:05:05,Jon Doe,present,normal
+2026-04-01 13:05:05,Jon Doe,present,head_turned
+2026-04-01 13:05:05,Jon Doe,present,sleeping
+2026-04-01 13:05:05,Jon Doe,present,normal
+2026-04-01 13:05:05,Sim_Student_474,present,sleeping
+2026-04-01 13:05:05,Jonah Ishaku,present,sleeping
+2026-04-01 13:05:05,Jon Doe,present,normal
+2026-04-01 13:05:05,Jon Doe,present,normal
+2026-04-01 13:05:05,Sim_Student_478,present,head_turned
+2026-04-01 13:05:05,Jon Doe,present,normal
+2026-04-01 13:05:05,Jon Doe,present,sleeping
+2026-04-01 13:05:05,Jon Doe,present,normal
+2026-04-01 13:05:05,Jonah Ishaku,present,normal
+2026-04-01 13:05:05,Jonah Ishaku,present,normal
+2026-04-01 13:05:05,Jonah Ishaku,present,normal
+2026-04-01 13:05:05,Jonah Ishaku,present,normal
+2026-04-01 13:05:05,Sim_Student_486,present,normal
+2026-04-01 13:05:05,Jonah Ishaku,present,sleeping
+2026-04-01 13:05:05,Sim_Student_488,present,normal
+2026-04-01 13:05:05,Sim_Student_489,present,sleeping
+2026-04-01 13:05:05,Jon Doe,present,normal
+2026-04-01 13:05:05,Sim_Student_491,present,normal
+2026-04-01 13:05:05,Jon Doe,present,head_turned
+2026-04-01 13:05:05,Jonah Ishaku,present,normal
+2026-04-01 13:05:05,Sim_Student_494,present,sleeping
+2026-04-01 13:05:05,Jonah Ishaku,present,normal
+2026-04-01 13:05:05,Jon Doe,present,normal
+2026-04-01 13:05:05,Jonah Ishaku,present,normal
+2026-04-01 13:05:05,Jon Doe,present,normal
+2026-04-01 13:05:05,Jon Doe,present,normal
+2026-04-01 13:05:05,Sim_Student_500,present,normal
+2026-04-01 13:05:05,Jon Doe,present,normal
+2026-04-01 13:05:05,Sim_Student_502,present,normal
+2026-04-01 13:05:05,Jon Doe,present,normal
+2026-04-01 13:05:05,Jonah Ishaku,present,normal
+2026-04-01 13:05:05,Jonah Ishaku,present,normal
+2026-04-01 13:05:05,Jonah Ishaku,present,sleeping
+2026-04-01 13:05:05,Jonah Ishaku,present,sleeping
+2026-04-01 13:05:05,Jon Doe,present,normal
+2026-04-01 13:05:05,Jon Doe,present,normal
+2026-04-01 13:05:05,Jon Doe,present,normal
+2026-04-01 13:05:05,Jon Doe,present,normal
+2026-04-01 13:05:05,Jonah Ishaku,present,normal
+2026-04-01 13:05:05,Sim_Student_513,present,normal
+2026-04-01 13:05:05,Jon Doe,present,normal
+2026-04-01 13:05:05,Sim_Student_515,present,normal
+2026-04-01 13:05:05,Jon Doe,present,normal
+2026-04-01 13:05:05,Jonah Ishaku,present,normal
+2026-04-01 13:05:05,Jon Doe,present,normal
+2026-04-01 13:05:05,Jonah Ishaku,present,normal
+2026-04-01 13:05:05,Sim_Student_520,present,head_turned
+2026-04-01 13:05:05,Sim_Student_521,present,normal
+2026-04-01 13:05:05,Jon Doe,present,head_turned
+2026-04-01 13:05:05,Jonah Ishaku,present,normal
+2026-04-01 13:05:05,Sim_Student_524,present,normal
+2026-04-01 13:05:05,Jonah Ishaku,present,normal
+2026-04-01 13:05:05,Jon Doe,present,normal
+2026-04-01 13:05:05,Sim_Student_527,present,normal
+2026-04-01 13:05:05,Jonah Ishaku,present,normal
+2026-04-01 13:05:05,Jon Doe,present,normal
+2026-04-01 13:05:05,Jonah Ishaku,present,normal
+2026-04-01 13:05:05,Jon Doe,present,sleeping
+2026-04-01 13:05:05,Jon Doe,present,normal
+2026-04-01 13:05:05,Jon Doe,present,normal
+2026-04-01 13:05:05,Jonah Ishaku,present,normal
+2026-04-01 13:05:05,Jon Doe,present,head_turned
+2026-04-01 13:05:05,Jonah Ishaku,present,normal
+2026-04-01 13:05:05,Jon Doe,present,normal
+2026-04-01 13:05:05,Jonah Ishaku,present,normal
+2026-04-01 13:05:05,Sim_Student_539,present,normal
+2026-04-01 13:05:05,Jon Doe,present,normal
+2026-04-01 13:05:05,Jon Doe,present,normal
+2026-04-01 13:05:05,Jonah Ishaku,present,normal
+2026-04-01 13:05:05,Jonah Ishaku,present,normal
+2026-04-01 13:05:05,Jon Doe,present,normal
+2026-04-01 13:05:05,Jon Doe,present,normal
+2026-04-01 13:05:05,Jonah Ishaku,present,head_turned
+2026-04-01 13:05:05,Jonah Ishaku,present,normal
+2026-04-01 13:05:05,Jon Doe,present,normal
+2026-04-01 13:05:05,Jon Doe,present,normal
+2026-04-01 13:05:05,Jonah Ishaku,present,normal
+2026-04-01 13:05:05,Jonah Ishaku,present,normal
+2026-04-01 13:05:05,Jonah Ishaku,present,normal
+2026-04-01 13:05:05,Jonah Ishaku,present,head_turned
+2026-04-01 13:05:05,Jon Doe,present,normal
+2026-04-01 13:05:05,Sim_Student_555,present,normal
+2026-04-01 13:05:05,Sim_Student_556,present,normal
+2026-04-01 13:05:05,Sim_Student_557,present,normal
+2026-04-01 13:05:05,Jon Doe,present,normal
+2026-04-01 13:05:05,Jonah Ishaku,present,normal
+2026-04-01 13:05:05,Jonah Ishaku,present,normal
+2026-04-01 13:05:05,Jonah Ishaku,present,normal
+2026-04-01 13:05:05,Jonah Ishaku,present,normal
+2026-04-01 13:05:05,Sim_Student_563,present,normal
+2026-04-01 13:05:05,Sim_Student_564,present,normal
+2026-04-01 13:05:05,Jon Doe,present,normal
+2026-04-01 13:05:05,Jonah Ishaku,present,normal
+2026-04-01 13:05:05,Jon Doe,present,normal
+2026-04-01 13:05:05,Jonah Ishaku,present,normal
+2026-04-01 13:05:05,Sim_Student_569,present,head_turned
+2026-04-01 13:05:05,Jon Doe,present,normal
+2026-04-01 13:05:05,Jonah Ishaku,present,normal
+2026-04-01 13:05:05,Jon Doe,present,normal
+2026-04-01 13:05:05,Sim_Student_573,present,sleeping
+2026-04-01 13:05:05,Jon Doe,present,normal
+2026-04-01 13:05:05,Sim_Student_575,present,normal
+2026-04-01 13:05:05,Jon Doe,present,sleeping
+2026-04-01 13:05:05,Jon Doe,present,normal
+2026-04-01 13:05:05,Sim_Student_578,present,normal
+2026-04-01 13:05:05,Sim_Student_579,present,normal
+2026-04-01 13:05:05,Jon Doe,present,normal
+2026-04-01 13:05:05,Jonah Ishaku,present,normal
+2026-04-01 13:05:05,Jonah Ishaku,present,normal
+2026-04-01 13:05:05,Jonah Ishaku,present,head_turned
+2026-04-01 13:05:05,Jonah Ishaku,present,normal
+2026-04-01 13:05:05,Jon Doe,present,normal
+2026-04-01 13:05:05,Jon Doe,present,normal
+2026-04-01 13:05:05,Sim_Student_587,present,normal
+2026-04-01 13:05:05,Jon Doe,present,head_turned
+2026-04-01 13:05:05,Jonah Ishaku,present,normal
+2026-04-01 13:05:05,Jon Doe,present,normal
+2026-04-01 13:05:05,Jonah Ishaku,present,normal
+2026-04-01 13:05:05,Jon Doe,present,normal
+2026-04-01 13:05:05,Jonah Ishaku,present,normal
+2026-04-01 13:05:05,Jonah Ishaku,present,normal
+2026-04-01 13:05:05,Sim_Student_595,present,normal
+2026-04-01 13:05:05,Jonah Ishaku,present,sleeping
+2026-04-01 13:05:05,Jon Doe,present,normal
+2026-04-01 13:05:05,Jonah Ishaku,present,head_turned
+2026-04-01 13:05:05,Sim_Student_599,present,normal
+2026-04-01 13:05:05,Jonah Ishaku,present,normal
+2026-04-01 13:05:05,Jon Doe,present,normal
+2026-04-01 13:05:05,Jon Doe,present,normal
+2026-04-01 13:05:05,Jonah Ishaku,present,normal
+2026-04-01 13:05:05,Jon Doe,present,sleeping
+2026-04-01 13:05:05,Sim_Student_605,present,normal
+2026-04-01 13:05:05,Sim_Student_606,present,normal
+2026-04-01 13:05:05,Sim_Student_607,present,sleeping
+2026-04-01 13:05:05,Jonah Ishaku,present,normal
+2026-04-01 13:05:05,Jonah Ishaku,present,normal
+2026-04-01 13:05:05,Jon Doe,present,normal
+2026-04-01 13:05:05,Jonah Ishaku,present,head_turned
+2026-04-01 13:05:05,Jon Doe,present,normal
+2026-04-01 13:05:05,Jonah Ishaku,present,normal
+2026-04-01 13:05:05,Jon Doe,present,normal
+2026-04-01 13:05:05,Sim_Student_615,present,sleeping
+2026-04-01 13:05:05,Jon Doe,present,normal
+2026-04-01 13:05:05,Sim_Student_617,present,normal
+2026-04-01 13:05:05,Jon Doe,present,normal
+2026-04-01 13:05:05,Jon Doe,present,normal
+2026-04-01 13:05:05,Jon Doe,present,normal
+2026-04-01 13:05:05,Sim_Student_621,present,normal
+2026-04-01 13:05:05,Jon Doe,present,normal
+2026-04-01 13:05:05,Jonah Ishaku,present,sleeping
+2026-04-01 13:05:05,Jonah Ishaku,present,normal
+2026-04-01 13:05:05,Jonah Ishaku,present,normal
+2026-04-01 13:05:05,Jon Doe,present,normal
+2026-04-01 13:05:05,Sim_Student_627,present,normal
+2026-04-01 13:05:05,Jonah Ishaku,present,sleeping
+2026-04-01 13:05:05,Sim_Student_629,present,normal
+2026-04-01 13:05:05,Jonah Ishaku,present,normal
+2026-04-01 13:05:05,Sim_Student_631,present,head_turned
+2026-04-01 13:05:05,Jon Doe,present,sleeping
+2026-04-01 13:05:05,Jonah Ishaku,present,normal
+2026-04-01 13:05:05,Sim_Student_634,present,normal
+2026-04-01 13:05:05,Jon Doe,present,normal
+2026-04-01 13:05:05,Jonah Ishaku,present,normal
+2026-04-01 13:05:05,Jonah Ishaku,present,normal
+2026-04-01 13:05:05,Jonah Ishaku,present,normal
+2026-04-01 13:05:05,Jon Doe,present,normal
+2026-04-01 13:05:05,Jonah Ishaku,present,head_turned
+2026-04-01 13:05:05,Sim_Student_641,present,normal
+2026-04-01 13:05:05,Sim_Student_642,present,normal
+2026-04-01 13:05:05,Jon Doe,present,normal
+2026-04-01 13:05:05,Jonah Ishaku,present,head_turned
+2026-04-01 13:05:05,Jon Doe,present,normal
+2026-04-01 13:05:05,Jonah Ishaku,present,normal
+2026-04-01 13:05:05,Sim_Student_647,present,head_turned
+2026-04-01 13:05:05,Jon Doe,present,normal
+2026-04-01 13:05:05,Jonah Ishaku,present,normal
+2026-04-01 13:05:05,Jonah Ishaku,present,sleeping
+2026-04-01 13:05:05,Jon Doe,present,sleeping
+2026-04-01 13:05:05,Jon Doe,present,normal
+2026-04-01 13:05:05,Jonah Ishaku,present,normal
+2026-04-01 13:05:05,Jon Doe,present,normal
+2026-04-01 13:05:05,Jonah Ishaku,present,normal
+2026-04-01 13:05:05,Jon Doe,present,normal
+2026-04-01 13:05:05,Jon Doe,present,normal
+2026-04-01 13:05:05,Jonah Ishaku,present,normal
+2026-04-01 13:05:05,Jonah Ishaku,present,normal
+2026-04-01 13:05:05,Sim_Student_660,present,normal
+2026-04-01 13:05:05,Sim_Student_661,present,sleeping
+2026-04-01 13:05:05,Sim_Student_662,present,normal
+2026-04-01 13:05:05,Sim_Student_663,present,normal
+2026-04-01 13:05:05,Jon Doe,present,normal
+2026-04-01 13:05:05,Jon Doe,present,normal
+2026-04-01 13:05:05,Sim_Student_666,present,normal
+2026-04-01 13:05:05,Sim_Student_667,present,normal
+2026-04-01 13:05:05,Jon Doe,present,normal
+2026-04-01 13:05:05,Sim_Student_669,present,normal
+2026-04-01 13:05:05,Jon Doe,present,normal
+2026-04-01 13:05:05,Jon Doe,present,normal
+2026-04-01 13:05:05,Sim_Student_672,present,normal
+2026-04-01 13:05:05,Jonah Ishaku,present,normal
+2026-04-01 13:05:05,Jonah Ishaku,present,normal
+2026-04-01 13:05:05,Sim_Student_675,present,normal
+2026-04-01 13:05:05,Jonah Ishaku,present,normal
+2026-04-01 13:05:05,Sim_Student_677,present,normal
+2026-04-01 13:05:05,Sim_Student_678,present,normal
+2026-04-01 13:05:05,Jonah Ishaku,present,normal
+2026-04-01 13:05:05,Sim_Student_680,present,normal
+2026-04-01 13:05:05,Sim_Student_681,present,normal
+2026-04-01 13:05:05,Jon Doe,present,normal
+2026-04-01 13:05:05,Jon Doe,present,normal
+2026-04-01 13:05:05,Jonah Ishaku,present,normal
+2026-04-01 13:05:05,Sim_Student_685,present,normal
+2026-04-01 13:05:05,Jonah Ishaku,present,normal
+2026-04-01 13:05:05,Sim_Student_687,present,normal
+2026-04-01 13:05:05,Jonah Ishaku,present,normal
+2026-04-01 13:05:05,Jonah Ishaku,present,normal
+2026-04-01 13:05:05,Jonah Ishaku,present,normal
+2026-04-01 13:05:05,Sim_Student_691,present,normal
+2026-04-01 13:05:05,Sim_Student_692,present,normal
+2026-04-01 13:05:05,Jonah Ishaku,present,normal
+2026-04-01 13:05:05,Jon Doe,present,sleeping
+2026-04-01 13:05:05,Sim_Student_695,present,normal
+2026-04-01 13:05:05,Sim_Student_696,present,normal
+2026-04-01 13:05:05,Jon Doe,present,normal
+2026-04-01 13:05:05,Jonah Ishaku,present,normal
+2026-04-01 13:05:05,Jonah Ishaku,present,normal
+2026-04-01 13:05:05,Jonah Ishaku,present,normal
+2026-04-01 13:05:05,Sim_Student_701,present,normal
+2026-04-01 13:05:05,Sim_Student_702,present,normal
+2026-04-01 13:05:05,Jonah Ishaku,present,normal
+2026-04-01 13:05:05,Sim_Student_704,present,sleeping
+2026-04-01 13:05:05,Jon Doe,present,normal
+2026-04-01 13:05:05,Jon Doe,present,normal
+2026-04-01 13:05:05,Sim_Student_707,present,normal
+2026-04-01 13:05:05,Jon Doe,present,normal
+2026-04-01 13:05:05,Jon Doe,present,normal
+2026-04-01 13:05:05,Jonah Ishaku,present,normal
+2026-04-01 13:05:05,Jon Doe,present,normal
+2026-04-01 13:05:05,Sim_Student_712,present,normal
+2026-04-01 13:05:05,Jon Doe,present,normal
+2026-04-01 13:05:05,Sim_Student_714,present,normal
+2026-04-01 13:05:05,Jonah Ishaku,present,normal
+2026-04-01 13:05:05,Jonah Ishaku,present,normal
+2026-04-01 13:05:05,Sim_Student_717,present,head_turned
+2026-04-01 13:05:05,Jon Doe,present,normal
+2026-04-01 13:05:05,Sim_Student_719,present,head_turned
+2026-04-01 13:05:05,Jon Doe,present,normal
+2026-04-01 13:05:05,Jon Doe,present,sleeping
+2026-04-01 13:05:05,Sim_Student_722,present,normal
+2026-04-01 13:05:05,Jon Doe,present,normal
+2026-04-01 13:05:05,Sim_Student_724,present,normal
+2026-04-01 13:05:05,Jonah Ishaku,present,normal
+2026-04-01 13:05:05,Sim_Student_726,present,normal
+2026-04-01 13:05:05,Jonah Ishaku,present,normal
+2026-04-01 13:05:05,Jonah Ishaku,present,normal
+2026-04-01 13:05:05,Jon Doe,present,normal
+2026-04-01 13:05:05,Jon Doe,present,normal
+2026-04-01 13:05:05,Jonah Ishaku,present,normal
+2026-04-01 13:05:05,Jonah Ishaku,present,head_turned
+2026-04-01 13:05:05,Jonah Ishaku,present,normal
+2026-04-01 13:05:05,Sim_Student_734,present,normal
+2026-04-01 13:05:05,Jonah Ishaku,present,normal
+2026-04-01 13:05:05,Jon Doe,present,normal
+2026-04-01 13:05:05,Sim_Student_737,present,normal
+2026-04-01 13:05:05,Jon Doe,present,normal
+2026-04-01 13:05:05,Jonah Ishaku,present,normal
+2026-04-01 13:05:05,Jonah Ishaku,present,normal
+2026-04-01 13:05:05,Jonah Ishaku,present,normal
+2026-04-01 13:05:05,Sim_Student_742,present,sleeping
+2026-04-01 13:05:05,Sim_Student_743,present,normal
+2026-04-01 13:05:05,Jon Doe,present,normal
+2026-04-01 13:05:05,Sim_Student_745,present,normal
+2026-04-01 13:05:05,Jonah Ishaku,present,normal
+2026-04-01 13:05:05,Jon Doe,present,sleeping
+2026-04-01 13:05:05,Sim_Student_748,present,sleeping
+2026-04-01 13:05:05,Sim_Student_749,present,normal
+2026-04-01 13:05:05,Sim_Student_750,present,normal
+2026-04-01 13:05:05,Jon Doe,present,head_turned
+2026-04-01 13:05:05,Jonah Ishaku,present,normal
+2026-04-01 13:05:05,Jonah Ishaku,present,normal
+2026-04-01 13:05:05,Jon Doe,present,head_turned
+2026-04-01 13:05:05,Jonah Ishaku,present,normal
+2026-04-01 13:05:05,Jon Doe,present,normal
+2026-04-01 13:05:05,Jonah Ishaku,present,normal
+2026-04-01 13:05:05,Jon Doe,present,head_turned
+2026-04-01 13:05:05,Jonah Ishaku,present,normal
+2026-04-01 13:05:05,Jon Doe,present,normal
+2026-04-01 13:05:05,Jonah Ishaku,present,normal
+2026-04-01 13:05:05,Sim_Student_762,present,sleeping
+2026-04-01 13:05:05,Jonah Ishaku,present,normal
+2026-04-01 13:05:05,Jonah Ishaku,present,normal
+2026-04-01 13:05:05,Jon Doe,present,normal
+2026-04-01 13:05:05,Jon Doe,present,head_turned
+2026-04-01 13:05:05,Sim_Student_767,present,normal
+2026-04-01 13:05:05,Jon Doe,present,normal
+2026-04-01 13:05:05,Jon Doe,present,normal
+2026-04-01 13:05:05,Jon Doe,present,normal
+2026-04-01 13:05:05,Jon Doe,present,normal
+2026-04-01 13:05:05,Jon Doe,present,normal
+2026-04-01 13:05:05,Jon Doe,present,sleeping
+2026-04-01 13:05:05,Sim_Student_774,present,normal
+2026-04-01 13:05:05,Sim_Student_775,present,sleeping
+2026-04-01 13:05:05,Sim_Student_776,present,normal
+2026-04-01 13:05:05,Jonah Ishaku,present,normal
+2026-04-01 13:05:05,Jon Doe,present,normal
+2026-04-01 13:05:05,Jon Doe,present,head_turned
+2026-04-01 13:05:05,Jon Doe,present,normal
+2026-04-01 13:05:05,Jon Doe,present,sleeping
+2026-04-01 13:05:05,Jonah Ishaku,present,normal
+2026-04-01 13:05:05,Jon Doe,present,normal
+2026-04-01 13:05:05,Jon Doe,present,head_turned
+2026-04-01 13:05:05,Jonah Ishaku,present,normal
+2026-04-01 13:05:05,Sim_Student_786,present,sleeping
+2026-04-01 13:05:05,Jonah Ishaku,present,sleeping
+2026-04-01 13:05:05,Sim_Student_788,present,normal
+2026-04-01 13:05:05,Sim_Student_789,present,normal
+2026-04-01 13:05:05,Jonah Ishaku,present,normal
+2026-04-01 13:05:05,Jon Doe,present,normal
+2026-04-01 13:05:05,Sim_Student_792,present,normal
+2026-04-01 13:05:05,Sim_Student_793,present,normal
+2026-04-01 13:05:05,Jonah Ishaku,present,normal
+2026-04-01 13:05:05,Jon Doe,present,normal
+2026-04-01 13:05:05,Jonah Ishaku,present,normal
+2026-04-01 13:05:05,Jon Doe,present,normal
+2026-04-01 13:05:05,Jon Doe,present,head_turned
+2026-04-01 13:05:05,Jon Doe,present,normal
+2026-04-01 13:05:05,Jonah Ishaku,present,normal
+2026-04-01 13:05:05,Jon Doe,present,normal
+2026-04-01 13:05:05,Jonah Ishaku,present,normal
+2026-04-01 13:05:05,Sim_Student_803,present,normal
+2026-04-01 13:05:05,Sim_Student_804,present,normal
+2026-04-01 13:05:05,Jonah Ishaku,present,head_turned
+2026-04-01 13:05:05,Jonah Ishaku,present,sleeping
+2026-04-01 13:05:05,Sim_Student_807,present,normal
+2026-04-01 13:05:05,Jonah Ishaku,present,normal
+2026-04-01 13:05:05,Sim_Student_809,present,normal
+2026-04-01 13:05:05,Jon Doe,present,normal
+2026-04-01 13:05:05,Jonah Ishaku,present,normal
+2026-04-01 13:05:05,Jonah Ishaku,present,normal
+2026-04-01 13:05:05,Jon Doe,present,normal
+2026-04-01 13:05:05,Sim_Student_814,present,normal
+2026-04-01 13:05:05,Jonah Ishaku,present,normal
+2026-04-01 13:05:05,Sim_Student_816,present,head_turned
+2026-04-01 13:05:05,Jon Doe,present,normal
+2026-04-01 13:05:05,Sim_Student_818,present,normal
+2026-04-01 13:05:05,Jonah Ishaku,present,normal
+2026-04-01 13:05:05,Jonah Ishaku,present,normal
+2026-04-01 13:05:05,Jon Doe,present,normal
+2026-04-01 13:05:05,Jon Doe,present,normal
+2026-04-01 13:05:05,Jon Doe,present,normal
+2026-04-01 13:05:05,Jonah Ishaku,present,normal
+2026-04-01 13:05:05,Sim_Student_825,present,normal
+2026-04-01 13:05:05,Sim_Student_826,present,normal
+2026-04-01 13:05:05,Jonah Ishaku,present,normal
+2026-04-01 13:05:05,Sim_Student_828,present,sleeping
+2026-04-01 13:05:05,Jon Doe,present,normal
+2026-04-01 13:05:05,Sim_Student_830,present,normal
+2026-04-01 13:05:05,Jon Doe,present,normal
+2026-04-01 13:05:05,Jon Doe,present,normal
+2026-04-01 13:05:05,Jon Doe,present,head_turned
+2026-04-01 13:05:05,Jonah Ishaku,present,normal
+2026-04-01 13:05:05,Jonah Ishaku,present,sleeping
+2026-04-01 13:05:05,Jonah Ishaku,present,normal
+2026-04-01 13:05:05,Sim_Student_837,present,normal
+2026-04-01 13:05:05,Jonah Ishaku,present,normal
+2026-04-01 13:05:05,Jonah Ishaku,present,normal
+2026-04-01 13:05:05,Sim_Student_840,present,normal
+2026-04-01 13:05:05,Sim_Student_841,present,normal
+2026-04-01 13:05:05,Sim_Student_842,present,normal
+2026-04-01 13:05:05,Jonah Ishaku,present,normal
+2026-04-01 13:05:05,Jonah Ishaku,present,normal
+2026-04-01 13:05:05,Jonah Ishaku,present,normal
+2026-04-01 13:05:05,Jonah Ishaku,present,normal
+2026-04-01 13:05:05,Jon Doe,present,normal
+2026-04-01 13:05:05,Sim_Student_848,present,normal
+2026-04-01 13:05:05,Jonah Ishaku,present,sleeping
+2026-04-01 13:05:05,Sim_Student_850,present,normal
+2026-04-01 13:05:05,Jonah Ishaku,present,normal
+2026-04-01 13:05:05,Jon Doe,present,normal
+2026-04-01 13:05:05,Jon Doe,present,normal
+2026-04-01 13:05:05,Jonah Ishaku,present,normal
+2026-04-01 13:05:05,Jon Doe,present,normal
+2026-04-01 13:05:05,Jonah Ishaku,present,normal
+2026-04-01 13:05:05,Jonah Ishaku,present,normal
+2026-04-01 13:05:05,Jon Doe,present,normal
+2026-04-01 13:05:05,Sim_Student_859,present,normal
+2026-04-01 13:05:05,Jon Doe,present,head_turned
+2026-04-01 13:05:05,Jonah Ishaku,present,normal
+2026-04-01 13:05:05,Jon Doe,present,normal
+2026-04-01 13:05:05,Jonah Ishaku,present,normal
+2026-04-01 13:05:05,Jon Doe,present,normal
+2026-04-01 13:05:05,Jon Doe,present,normal
+2026-04-01 13:05:05,Sim_Student_866,present,normal
+2026-04-01 13:05:05,Jon Doe,present,normal
+2026-04-01 13:05:05,Jon Doe,present,normal
+2026-04-01 13:05:05,Jon Doe,present,normal
+2026-04-01 13:05:05,Jonah Ishaku,present,sleeping
+2026-04-01 13:05:05,Jonah Ishaku,present,normal
+2026-04-01 13:05:05,Sim_Student_872,present,normal
+2026-04-01 13:05:05,Jon Doe,present,normal
+2026-04-01 13:05:05,Jon Doe,present,normal
+2026-04-01 13:05:05,Jonah Ishaku,present,normal
+2026-04-01 13:05:05,Sim_Student_876,present,sleeping
+2026-04-01 13:05:05,Sim_Student_877,present,normal
+2026-04-01 13:05:05,Sim_Student_878,present,normal
+2026-04-01 13:05:05,Jonah Ishaku,present,normal
+2026-04-01 13:05:05,Sim_Student_880,present,head_turned
+2026-04-01 13:05:05,Sim_Student_881,present,normal
+2026-04-01 13:05:05,Jonah Ishaku,present,normal
+2026-04-01 13:05:05,Jonah Ishaku,present,normal
+2026-04-01 13:05:05,Jonah Ishaku,present,normal
+2026-04-01 13:05:05,Jonah Ishaku,present,normal
+2026-04-01 13:05:05,Jon Doe,present,normal
+2026-04-01 13:05:05,Jon Doe,present,normal
+2026-04-01 13:05:05,Jonah Ishaku,present,normal
+2026-04-01 13:05:05,Jonah Ishaku,present,normal
+2026-04-01 13:05:05,Jon Doe,present,normal
+2026-04-01 13:05:05,Jonah Ishaku,present,normal
+2026-04-01 13:05:05,Sim_Student_892,present,normal
+2026-04-01 13:05:05,Jon Doe,present,normal
+2026-04-01 13:05:05,Jonah Ishaku,present,normal
+2026-04-01 13:05:05,Sim_Student_895,present,normal
+2026-04-01 13:05:05,Jonah Ishaku,present,normal
+2026-04-01 13:05:05,Sim_Student_897,present,normal
+2026-04-01 13:05:05,Jonah Ishaku,present,normal
+2026-04-01 13:05:05,Jonah Ishaku,present,normal
+2026-04-01 13:05:05,Sim_Student_900,present,sleeping
+2026-04-01 13:05:05,Jon Doe,present,normal
+2026-04-01 13:05:05,Jonah Ishaku,present,sleeping
+2026-04-01 13:05:05,Sim_Student_903,present,normal
+2026-04-01 13:05:05,Sim_Student_904,present,normal
+2026-04-01 13:05:05,Jonah Ishaku,present,normal
+2026-04-01 13:05:05,Jonah Ishaku,present,normal
+2026-04-01 13:05:05,Sim_Student_907,present,normal
+2026-04-01 13:05:05,Jonah Ishaku,present,normal
+2026-04-01 13:05:05,Jon Doe,present,sleeping
+2026-04-01 13:05:05,Jonah Ishaku,present,normal
+2026-04-01 13:05:05,Jon Doe,present,normal
+2026-04-01 13:05:05,Jonah Ishaku,present,head_turned
+2026-04-01 13:05:05,Jonah Ishaku,present,normal
+2026-04-01 13:05:05,Jonah Ishaku,present,normal
+2026-04-01 13:05:05,Sim_Student_915,present,normal
+2026-04-01 13:05:05,Jon Doe,present,normal
+2026-04-01 13:05:05,Jonah Ishaku,present,normal
+2026-04-01 13:05:05,Jonah Ishaku,present,normal
+2026-04-01 13:05:05,Sim_Student_919,present,normal
+2026-04-01 13:05:05,Jon Doe,present,normal
+2026-04-01 13:05:05,Jonah Ishaku,present,normal
+2026-04-01 13:05:05,Jonah Ishaku,present,normal
+2026-04-01 13:05:05,Jonah Ishaku,present,normal
+2026-04-01 13:05:05,Jon Doe,present,normal
+2026-04-01 13:05:05,Jon Doe,present,normal
+2026-04-01 13:05:05,Jon Doe,present,normal
+2026-04-01 13:05:05,Jon Doe,present,normal
+2026-04-01 13:05:05,Jonah Ishaku,present,normal
+2026-04-01 13:05:05,Sim_Student_929,present,normal
+2026-04-01 13:05:05,Jonah Ishaku,present,normal
+2026-04-01 13:05:05,Sim_Student_931,present,normal
+2026-04-01 13:05:05,Jon Doe,present,normal
+2026-04-01 13:05:05,Jon Doe,present,sleeping
+2026-04-01 13:05:05,Sim_Student_934,present,normal
+2026-04-01 13:05:05,Jonah Ishaku,present,normal
+2026-04-01 13:05:05,Jon Doe,present,normal
+2026-04-01 13:05:05,Sim_Student_937,present,normal
+2026-04-01 13:05:05,Sim_Student_938,present,sleeping
+2026-04-01 13:05:05,Jon Doe,present,head_turned
+2026-04-01 13:05:05,Jonah Ishaku,present,normal
+2026-04-01 13:05:05,Sim_Student_941,present,normal
+2026-04-01 13:05:05,Sim_Student_942,present,head_turned
+2026-04-01 13:05:05,Jon Doe,present,normal
+2026-04-01 13:05:05,Sim_Student_944,present,normal
+2026-04-01 13:05:05,Sim_Student_945,present,normal
+2026-04-01 13:05:05,Jon Doe,present,normal
+2026-04-01 13:05:05,Sim_Student_947,present,sleeping
+2026-04-01 13:05:05,Jon Doe,present,normal
+2026-04-01 13:05:05,Sim_Student_949,present,normal
+2026-04-01 13:05:05,Sim_Student_950,present,normal
+2026-04-01 13:05:05,Jonah Ishaku,present,head_turned
+2026-04-01 13:05:05,Jonah Ishaku,present,normal
+2026-04-01 13:05:05,Sim_Student_953,present,normal
+2026-04-01 13:05:05,Sim_Student_954,present,normal
+2026-04-01 13:05:05,Jonah Ishaku,present,sleeping
+2026-04-01 13:05:05,Jon Doe,present,normal
+2026-04-01 13:05:05,Jon Doe,present,normal
+2026-04-01 13:05:05,Jonah Ishaku,present,normal
+2026-04-01 13:05:05,Jonah Ishaku,present,normal
+2026-04-01 13:05:05,Jonah Ishaku,present,head_turned
+2026-04-01 13:05:05,Jonah Ishaku,present,normal
+2026-04-01 13:05:05,Sim_Student_962,present,sleeping
+2026-04-01 13:05:05,Jon Doe,present,head_turned
+2026-04-01 13:05:05,Jonah Ishaku,present,normal
+2026-04-01 13:05:05,Jonah Ishaku,present,sleeping
+2026-04-01 13:05:05,Sim_Student_966,present,head_turned
+2026-04-01 13:05:05,Jonah Ishaku,present,normal
+2026-04-01 13:05:05,Sim_Student_968,present,normal
+2026-04-01 13:05:05,Sim_Student_969,present,sleeping
+2026-04-01 13:05:05,Jonah Ishaku,present,normal
+2026-04-01 13:05:05,Sim_Student_971,present,normal
+2026-04-01 13:05:05,Sim_Student_972,present,normal
+2026-04-01 13:05:05,Jon Doe,present,normal
+2026-04-01 13:05:05,Jonah Ishaku,present,normal
+2026-04-01 13:05:05,Jonah Ishaku,present,sleeping
+2026-04-01 13:05:05,Jonah Ishaku,present,normal
+2026-04-01 13:05:05,Sim_Student_977,present,normal
+2026-04-01 13:05:05,Sim_Student_978,present,normal
+2026-04-01 13:05:05,Sim_Student_979,present,normal
+2026-04-01 13:05:05,Jon Doe,present,normal
+2026-04-01 13:05:05,Sim_Student_981,present,normal
+2026-04-01 13:05:05,Sim_Student_982,present,normal
+2026-04-01 13:05:05,Jon Doe,present,normal
+2026-04-01 13:05:05,Sim_Student_984,present,normal
+2026-04-01 13:05:05,Sim_Student_985,present,normal
+2026-04-01 13:05:05,Jon Doe,present,normal
+2026-04-01 13:05:05,Sim_Student_987,present,normal
+2026-04-01 13:05:05,Jonah Ishaku,present,normal
+2026-04-01 13:05:05,Jonah Ishaku,present,normal
+2026-04-01 13:05:05,Jon Doe,present,normal
+2026-04-01 13:05:05,Sim_Student_991,present,normal
+2026-04-01 13:05:05,Jonah Ishaku,present,head_turned
+2026-04-01 13:05:05,Jon Doe,present,sleeping
+2026-04-01 13:05:05,Jonah Ishaku,present,normal
+2026-04-01 13:05:05,Jonah Ishaku,present,normal
+2026-04-01 13:05:05,Sim_Student_996,present,normal
+2026-04-01 13:05:05,Jonah Ishaku,present,normal
+2026-04-01 13:05:05,Jonah Ishaku,present,normal
+2026-04-01 13:05:05,Jon Doe,present,sleeping
+2026-04-01 13:05:05,Jonah Ishaku,present,normal
+2026-04-01 13:20:34,Basheer Umar,present,normal
+2026-04-01 13:20:43,Jonah Ishaku,present,normal

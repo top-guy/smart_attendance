@@ -7,6 +7,10 @@ dist/
 build/
 .env
 venv/
+.venv/
+myenv/
+.ipynb_checkpoints/
+pip_log.txt
 
 # Data files (regenerated at runtime)
 uploads/

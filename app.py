@@ -41,10 +41,10 @@ def load_known_faces():
                         res = DeepFace.represent(img_path=face_path, model_name="Facenet", enforce_detection=False)
                         embeddings.append(res[0]["embedding"])
                     except Exception as e:
-                        print(f"  ⚠️ Skipping {face_path}: {e}")
+                        print(f"  [SKIP] {face_path}: {str(e).encode('ascii', 'replace').decode()}")
             if embeddings:
                 known_embeddings[student_name] = embeddings
-                print(f"  ✅ {student_name}: {len(embeddings)} embedding(s)")
+                print(f"  [OK] {student_name}: {len(embeddings)} embedding(s)")
     print(f"Loaded {len(known_embeddings)} students.")
 
 load_known_faces()
@@ -143,13 +143,13 @@ def register():
             res = DeepFace.represent(img_path=face_path, model_name="Facenet", enforce_detection=False)
             embeddings.append(res[0]["embedding"])
         except Exception as e:
-            print(f"⚠️ Embedding error for photo {idx}: {e}")
+            print(f"[WARN] Embedding error for photo {idx}: {e}")
 
     if embeddings:
         known_embeddings[safe_name] = embeddings
-        print(f"✅ {name}: {len(embeddings)} embeddings registered")
+        print(f"[OK] {name}: {len(embeddings)} embeddings registered")
     else:
-        print(f"⚠️ {name}: registered but no embeddings computed")
+        print(f"[WARN] {name}: registered but no embeddings computed")
 
     new_row = {
         "name": name, "reg_number": reg_number,
@@ -209,7 +209,7 @@ def identify_face():
                     best_dist = cosine_dist
                     best_name = student_name
 
-        print(f"🔍 Best: {best_name}, dist: {best_dist:.4f}")
+        print(f"[MATCH] Best: {best_name}, dist: {best_dist:.4f}")
 
         if best_dist < 0.55:
             confidence = int((1 - best_dist) * 100)
@@ -227,7 +227,7 @@ def identify_face():
                     att_df = pd.concat([att_df, pd.DataFrame([new_row])], ignore_index=True)
                     att_df.to_csv(ATTENDANCE_CSV, index=False)
                     marked_today_cache.add(cache_key)
-                    print(f"✅ Marked: {display_name}")
+                    print(f"[MARKED] {display_name}")
                 return jsonify({
                     "name": display_name, "confidence": confidence,
                     "already_marked": already_marked
@@ -238,7 +238,7 @@ def identify_face():
             return jsonify({"name": "Unknown", "confidence": 0})
 
     except Exception as e:
-        print(f"❌ identify error: {e}")
+        print(f"[ERROR] identify error: {e}")
         return jsonify({"name": "Unknown", "confidence": 0})
 
 @app.route("/reset_session", methods=["POST"])
@@ -367,7 +367,7 @@ def process_video_thread(job_id, video_path):
                     new_row = {"timestamp": timestamp, "name": display_name, "status": "present", "behavior": "normal"}
                     att_df = pd.concat([att_df, pd.DataFrame([new_row])], ignore_index=True)
                     att_df.to_csv(ATTENDANCE_CSV, index=False)
-                    print(f"📹 Video: marked {display_name} ({confidence}%)")
+                    print(f"[VIDEO] Marked {display_name} ({confidence}%)")
 
             current_labels = new_labels
 
@@ -398,7 +398,7 @@ def process_video_thread(job_id, video_path):
     out.release()
     job["status"] = "done"
     job["progress"] = 100
-    print(f"📹 Video complete: {len(found_students)} students, output: {output_path}")
+    print(f"[VIDEO DONE] {len(found_students)} students, output: {output_path}")
 
     # Clean up input video (keep output)
     try:
@@ -446,6 +446,6 @@ def download_output_video(filename):
     return jsonify({"error": "File not found"}), 404
 
 if __name__ == "__main__":
-    print("🚀 SmartClass v7 – Hybrid AI Attendance & Monitoring")
-    print("Open → http://127.0.0.1:5000")
+    print("SmartClass v7 - Hybrid AI Attendance & Monitoring")
+    print("Open http://127.0.0.1:5000")
     app.run(debug=True, port=5000)
