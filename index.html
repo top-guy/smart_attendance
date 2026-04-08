@@ -434,16 +434,16 @@
                 "https://cdn.jsdelivr.net/npm/@mediapipe/tasks-vision@latest/wasm"
             );
             faceDetector = await FaceDetector.createFromOptions(filesetResolver, {
-                baseOptions: { modelAssetPath: "https://storage.googleapis.com/mediapipe-models/face_detector/blaze_face_short_range/float16/latest/blaze_face_short_range.tflite" },
+                baseOptions: { modelAssetPath: "https://storage.googleapis.com/mediapipe-models/face_detector/blaze_face_full_range/float16/latest/blaze_face_full_range.tflite" },
                 runningMode: "VIDEO",
-                minDetectionConfidence: 0.5
+                minDetectionConfidence: 0.35
             });
             faceLandmarker = await FaceLandmarker.createFromOptions(filesetResolver, {
                 baseOptions: { modelAssetPath: "https://storage.googleapis.com/mediapipe-models/face_landmarker/face_landmarker/float16/latest/face_landmarker.task" },
                 runningMode: "VIDEO",
-                numFaces: 10,
-                minFaceDetectionConfidence: 0.5,
-                minFacePresenceConfidence: 0.5
+                numFaces: 20,
+                minFaceDetectionConfidence: 0.35,
+                minFacePresenceConfidence: 0.35
             });
             console.log("✅ MediaPipe initialized (client-side)");
         }

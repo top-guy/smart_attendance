@@ -60,7 +60,7 @@ os.makedirs(UPLOADS_FOLDER, exist_ok=True)
 video_jobs = {}
 
 # Helper: identify a face from an image array
-def identify_from_image(face_img, threshold=0.40):
+def identify_from_image(face_img, threshold=0.45):
     """Given a BGR face image (numpy array), return (name, confidence) or ('Unknown', 0)."""
     if face_img is None or face_img.size == 0 or not known_embeddings:
         return "Unknown", 0
@@ -150,7 +150,7 @@ def register():
 
         # Compute embedding
         try:
-            res = DeepFace.represent(img_path=face_path, model_name="Facenet", enforce_detection=False)
+            res = DeepFace.represent(img_path=face_path, model_name="Facenet512", enforce_detection=False)
             embeddings.append(res[0]["embedding"])
         except Exception as e:
             print(f"[WARN] Embedding error for photo {idx}: {e}")
