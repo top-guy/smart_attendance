@@ -132,12 +132,25 @@
         .status-badge.normal { background: var(--accent-green-glow); color: var(--accent-green); }
 
         .students-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); gap: 14px; }
-        .student-card { background: var(--bg-card); border: 1px solid var(--border); border-radius: var(--radius-lg); padding: 18px; text-align: center; transition: var(--transition); }
+        .student-card { background: var(--bg-card); border: 1px solid var(--border); border-radius: var(--radius-lg); padding: 18px; text-align: center; transition: var(--transition); position: relative; }
         .student-card:hover { border-color: var(--accent-primary); transform: translateY(-3px); }
+        .student-card:hover .delete-btn { opacity: 1; pointer-events: auto; }
         .student-avatar { width: 56px; height: 56px; border-radius: 50%; background: var(--gradient-primary); display: flex; align-items: center; justify-content: center; margin: 0 auto 10px; font-size: 22px; font-weight: 700; color: white; }
         .student-card .sname { font-weight: 600; font-size: 13px; margin-bottom: 3px; }
         .student-card .sreg { font-size: 11px; color: var(--text-muted); font-family: monospace; }
         .student-card .sdept { font-size: 10px; color: var(--accent-primary); margin-top: 4px; text-transform: uppercase; letter-spacing: 1px; }
+        .delete-btn { position: absolute; top: 10px; right: 10px; width: 28px; height: 28px; border: none; border-radius: 8px; background: var(--accent-red-glow); color: var(--accent-red); cursor: pointer; display: flex; align-items: center; justify-content: center; font-size: 12px; opacity: 0; pointer-events: none; transition: var(--transition); }
+        .delete-btn:hover { background: var(--accent-red); color: white; transform: scale(1.1); }
+
+        /* Confirmation Modal */
+        .modal-overlay { position: fixed; inset: 0; background: rgba(0,0,0,0.7); backdrop-filter: blur(6px); z-index: 1000; display: none; align-items: center; justify-content: center; animation: fadeInUp 0.2s ease-out; }
+        .modal-overlay.open { display: flex; }
+        .modal-box { background: var(--bg-card); border: 1px solid var(--border); border-radius: var(--radius-lg); padding: 32px; max-width: 400px; width: 90%; box-shadow: 0 24px 60px rgba(0,0,0,0.5); text-align: center; }
+        .modal-icon { width: 60px; height: 60px; border-radius: 50%; background: var(--accent-red-glow); display: flex; align-items: center; justify-content: center; margin: 0 auto 16px; font-size: 26px; color: var(--accent-red); }
+        .modal-box h3 { font-size: 18px; font-weight: 700; margin-bottom: 8px; }
+        .modal-box p { font-size: 13px; color: var(--text-secondary); margin-bottom: 24px; line-height: 1.6; }
+        .modal-actions { display: flex; gap: 12px; justify-content: center; }
+        .modal-actions .btn { min-width: 110px; }
 
         ::-webkit-scrollbar { width: 5px; }
         ::-webkit-scrollbar-track { background: transparent; }
@@ -376,8 +389,22 @@
     </div>
     </div>
 
+    <!-- Delete Confirmation Modal -->
+    <div class="modal-overlay" id="delete-modal">
+        <div class="modal-box">
+            <div class="modal-icon"><i class="fa-solid fa-trash-can"></i></div>
+            <h3>Delete Student?</h3>
+            <p id="delete-modal-text">This will permanently remove the student, their face data, and all associated embeddings. This cannot be undone.</p>
+            <div class="modal-actions">
+                <button class="btn btn-outline" onclick="closeDeleteModal()">Cancel</button>
+                <button class="btn btn-red" id="confirm-delete-btn" onclick="confirmDelete()"><i class="fa-solid fa-trash-can"></i> Delete</button>
+            </div>
+        </div>
+    </div>
+
     <!-- MediaPipe JS -->
     <script src="https://cdn.jsdelivr.net/npm/@mediapipe/tasks-vision@latest/vision_bundle.mjs" type="module"></script>
+
     <script type="module">
         import { FaceDetector, FaceLandmarker, FilesetResolver, DrawingUtils } from
             "https://cdn.jsdelivr.net/npm/@mediapipe/tasks-vision@latest/vision_bundle.mjs";
@@ -811,17 +838,74 @@
         }
 
         // ===== Students =====
+        let pendingDeleteReg = null;
+
         window.loadStudents = async function() {
             const res = await fetch('/get_students');
             const data = await res.json();
             const grid = document.getElementById('students-grid');
-            document.getElementById('students-count').textContent = `${data.students.length} students`;
+            document.getElementById('students-count').textContent = `${data.students.length} student${data.students.length !== 1 ? 's' : ''}`;
             if (data.students.length === 0) {
                 grid.innerHTML = '<div style="text-align:center;padding:36px;color:var(--text-muted);grid-column:1/-1;"><i class="fa-solid fa-user-slash" style="font-size:28px;margin-bottom:10px;display:block;"></i>No students registered yet</div>';
                 return;
             }
-            grid.innerHTML = data.students.map(s => `<div class="student-card"><div class="student-avatar">${s.name.charAt(0).toUpperCase()}</div><div class="sname">${s.name}</div><div class="sreg">${s.reg_number}</div><div class="sdept">${s.department}</div></div>`).join('');
+            grid.innerHTML = data.students.map(s => `
+                <div class="student-card" id="card-${s.reg_number}">
+                    <button class="delete-btn" title="Delete student" onclick="openDeleteModal('${s.reg_number}', '${s.name.replace(/'/g, "\\'")}')"><i class="fa-solid fa-trash-can"></i></button>
+                    <div class="student-avatar">${s.name.charAt(0).toUpperCase()}</div>
+                    <div class="sname">${s.name}</div>
+                    <div class="sreg">${s.reg_number}</div>
+                    <div class="sdept">${s.department}</div>
+                </div>`).join('');
         };
+
+        window.openDeleteModal = function(regNumber, name) {
+            pendingDeleteReg = regNumber;
+            document.getElementById('delete-modal-text').textContent =
+                `This will permanently remove "${name}" (${regNumber}), their face photos, and all recognition data. This cannot be undone.`;
+            document.getElementById('delete-modal').classList.add('open');
+        };
+
+        window.closeDeleteModal = function() {
+            document.getElementById('delete-modal').classList.remove('open');
+            pendingDeleteReg = null;
+        };
+
+        window.confirmDelete = async function() {
+            if (!pendingDeleteReg) return;
+            const btn = document.getElementById('confirm-delete-btn');
+            btn.disabled = true;
+            btn.innerHTML = '<div class="spinner" style="display:inline-block;margin-right:6px;"></div> Deleting...';
+
+            try {
+                const res = await fetch('/delete_student', {
+                    method: 'POST',
+                    headers: { 'Content-Type': 'application/json' },
+                    body: JSON.stringify({ reg_number: pendingDeleteReg })
+                });
+                const data = await res.json();
+                if (data.success) {
+                    // Animate card out
+                    const card = document.getElementById(`card-${pendingDeleteReg}`);
+                    if (card) { card.style.transition = 'all 0.3s ease'; card.style.opacity = '0'; card.style.transform = 'scale(0.8)'; setTimeout(() => card.remove(), 300); }
+                    closeDeleteModal();
+                    // Refresh count
+                    setTimeout(loadStudents, 350);
+                } else {
+                    alert('Error: ' + data.message);
+                }
+            } catch(e) {
+                alert('Delete failed: ' + e.message);
+            }
+
+            btn.disabled = false;
+            btn.innerHTML = '<i class="fa-solid fa-trash-can"></i> Delete';
+        };
+
+        // Close modal on overlay click
+        document.getElementById('delete-modal').addEventListener('click', function(e) {
+            if (e.target === this) closeDeleteModal();
+        });
 
         // ===== Reports =====
         window.loadReports = async function() {

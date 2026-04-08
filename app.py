@@ -35,7 +35,7 @@ def load_known_faces():
         if os.path.isdir(student_dir):
             embeddings = []
             for fname in sorted(os.listdir(student_dir)):
-                if fname.endswith((".jpg", ".png")):
+                if fname.lower().endswith((".jpg", ".jpeg", ".png", ".webp")):
                     face_path = os.path.join(student_dir, fname)
                     try:
                         res = DeepFace.represent(img_path=face_path, model_name="Facenet", enforce_detection=False)
@@ -60,11 +60,18 @@ os.makedirs(UPLOADS_FOLDER, exist_ok=True)
 video_jobs = {}
 
 # Helper: identify a face from an image array
-def identify_from_image(face_img):
+def identify_from_image(face_img, threshold=0.60):
     """Given a BGR face image (numpy array), return (name, confidence) or ('Unknown', 0)."""
     if face_img is None or face_img.size == 0 or not known_embeddings:
         return "Unknown", 0
     try:
+        # Apply CLAHE to normalise lighting differences between registration and video
+        lab = cv2.cvtColor(face_img, cv2.COLOR_BGR2LAB)
+        l, a, b = cv2.split(lab)
+        clahe = cv2.createCLAHE(clipLimit=2.0, tileGridSize=(8, 8))
+        l = clahe.apply(l)
+        face_img = cv2.cvtColor(cv2.merge([l, a, b]), cv2.COLOR_LAB2BGR)
+
         face_resized = cv2.resize(face_img, (160, 160))
         roi_emb = DeepFace.represent(img_path=face_resized, model_name="Facenet", enforce_detection=False)[0]["embedding"]
         best_name, best_dist = "Unknown", float("inf")
@@ -75,10 +82,11 @@ def identify_from_image(face_img):
                 if cosine_dist < best_dist:
                     best_dist = cosine_dist
                     best_name = student_name
-        if best_dist < 0.55:
+        print(f"[MATCH] Best: {best_name}, dist: {best_dist:.4f}, threshold: {threshold}")
+        if best_dist < threshold:
             return best_name, int((1 - best_dist) * 100)
-    except:
-        pass
+    except Exception as e:
+        print(f"[ERROR] identify_from_image: {e}")
     return "Unknown", 0
 
 # ===== Routes =====
@@ -271,6 +279,38 @@ def get_students():
     df = pd.read_csv(STUDENTS_CSV)
     return jsonify({"students": df.to_dict("records")})
 
+@app.route("/delete_student", methods=["POST"])
+def delete_student():
+    data = request.json
+    reg_number = data.get("reg_number")
+    if not reg_number:
+        return jsonify({"success": False, "message": "No reg_number provided"})
+
+    df = pd.read_csv(STUDENTS_CSV)
+    student_rows = df[df["reg_number"] == reg_number]
+    if student_rows.empty:
+        return jsonify({"success": False, "message": "Student not found"})
+
+    student_name = student_rows.iloc[0]["name"]
+    safe_name = student_name.replace(' ', '_').replace("'", "").replace('"', "")
+
+    # Remove from CSV
+    df = df[df["reg_number"] != reg_number]
+    df.to_csv(STUDENTS_CSV, index=False)
+
+    # Remove face images folder
+    student_folder = os.path.join(FACES_FOLDER, safe_name)
+    if os.path.isdir(student_folder):
+        import shutil
+        shutil.rmtree(student_folder)
+
+    # Remove from in-memory embeddings
+    if safe_name in known_embeddings:
+        del known_embeddings[safe_name]
+
+    print(f"[DELETE] {student_name} ({reg_number}) removed.")
+    return jsonify({"success": True, "message": f"{student_name} deleted successfully"})
+
 @app.route("/get_reports")
 def get_reports():
     df = pd.read_csv(ATTENDANCE_CSV)
@@ -300,7 +340,55 @@ def simulate_large_class():
 OUTPUTS_FOLDER = "outputs"
 os.makedirs(OUTPUTS_FOLDER, exist_ok=True)
 
+# DNN-based face detector (much more robust than Haar cascade for video)
+_DNN_PROTO = os.path.join(os.path.dirname(__file__), "models", "deploy.prototxt")
+_DNN_MODEL = os.path.join(os.path.dirname(__file__), "models", "res10_300x300_ssd_iter_140000_fp16.caffemodel")
+
+def _get_dnn_detector():
+    """Load OpenCV DNN face detector, fall back to Haar cascade if model files not found."""
+    if os.path.exists(_DNN_PROTO) and os.path.exists(_DNN_MODEL):
+        try:
+            net = cv2.dnn.readNetFromCaffe(_DNN_PROTO, _DNN_MODEL)
+            print("[INIT] Using OpenCV DNN face detector")
+            return net
+        except Exception as e:
+            print(f"[WARN] DNN load failed: {e}")
+    print("[INIT] Falling back to Haar cascade face detector")
+    return None
+
+dnn_net = _get_dnn_detector()
 face_cascade = cv2.CascadeClassifier(cv2.data.haarcascades + 'haarcascade_frontalface_default.xml')
+
+def detect_faces_in_frame(frame):
+    """Detect faces using DNN (preferred) or Haar cascade fallback.
+    Returns list of (x, y, w, h) tuples."""
+    h, w = frame.shape[:2]
+    if dnn_net is not None:
+        blob = cv2.dnn.blobFromImage(frame, 1.0, (300, 300),
+                                     (104.0, 177.0, 123.0), swapRB=False)
+        dnn_net.setInput(blob)
+        detections = dnn_net.forward()
+        faces = []
+        for i in range(detections.shape[2]):
+            conf = float(detections[0, 0, i, 2])
+            if conf < 0.5:
+                continue
+            x1 = int(detections[0, 0, i, 3] * w)
+            y1 = int(detections[0, 0, i, 4] * h)
+            x2 = int(detections[0, 0, i, 5] * w)
+            y2 = int(detections[0, 0, i, 6] * h)
+            x1, y1 = max(0, x1), max(0, y1)
+            x2, y2 = min(w, x2), min(h, y2)
+            fw, fh = x2 - x1, y2 - y1
+            if fw > 20 and fh > 20:
+                faces.append((x1, y1, fw, fh))
+        return faces
+    else:
+        gray = cv2.cvtColor(frame, cv2.COLOR_BGR2GRAY)
+        faces = face_cascade.detectMultiScale(
+            gray, scaleFactor=1.1, minNeighbors=4, minSize=(40, 40)
+        )
+        return list(faces) if len(faces) > 0 else []
 
 def process_video_thread(job_id, video_path):
     """Background thread: process video, annotate faces, write output video."""
@@ -332,29 +420,31 @@ def process_video_thread(job_id, video_path):
     # Cache of current face labels: [(x, y, w, h, name, confidence), ...]
     current_labels = []
     frame_idx = 0
+    # Use a relaxed threshold for video frames (blurrier than registration photos)
+    VIDEO_THRESHOLD = 0.65
 
     while cap.isOpened():
         ret, frame = cap.read()
         if not ret:
             break
 
-        if frame_idx % sample_interval == 0:
+        if sample_interval < 1 or frame_idx % sample_interval == 0:
             job["progress"] = round((frame_idx / max(total_frames, 1)) * 100, 1)
 
-            # Detect faces and identify
-            gray = cv2.cvtColor(frame, cv2.COLOR_BGR2GRAY)
-            faces = face_cascade.detectMultiScale(gray, scaleFactor=1.1, minNeighbors=5, minSize=(60, 60))
+            # Detect faces using DNN or Haar cascade
+            faces = detect_faces_in_frame(frame)
+            print(f"[VIDEO] Frame {frame_idx}: {len(faces)} face(s) detected")
             new_labels = []
 
             for (fx, fy, fw, fh) in faces:
-                pad = int(max(fw, fh) * 0.2)
+                pad = int(max(fw, fh) * 0.15)
                 x1 = max(0, fx - pad)
                 y1 = max(0, fy - pad)
                 x2 = min(frame_w, fx + fw + pad)
                 y2 = min(frame_h, fy + fh + pad)
                 face_crop = frame[y1:y2, x1:x2]
 
-                name, confidence = identify_from_image(face_crop)
+                name, confidence = identify_from_image(face_crop, threshold=VIDEO_THRESHOLD)
                 display_name = name.replace('_', ' ') if name != "Unknown" else "Unknown"
                 new_labels.append((fx, fy, fw, fh, display_name, confidence))
 
