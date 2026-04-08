@@ -38,7 +38,7 @@ def load_known_faces():
                 if fname.lower().endswith((".jpg", ".jpeg", ".png", ".webp")):
                     face_path = os.path.join(student_dir, fname)
                     try:
-                        res = DeepFace.represent(img_path=face_path, model_name="Facenet", enforce_detection=False)
+                        res = DeepFace.represent(img_path=face_path, model_name="Facenet512", enforce_detection=False)
                         embeddings.append(res[0]["embedding"])
                     except Exception as e:
                         print(f"  [SKIP] {face_path}: {str(e).encode('ascii', 'replace').decode()}")
@@ -60,7 +60,7 @@ os.makedirs(UPLOADS_FOLDER, exist_ok=True)
 video_jobs = {}
 
 # Helper: identify a face from an image array
-def identify_from_image(face_img, threshold=0.60):
+def identify_from_image(face_img, threshold=0.40):
     """Given a BGR face image (numpy array), return (name, confidence) or ('Unknown', 0)."""
     if face_img is None or face_img.size == 0 or not known_embeddings:
         return "Unknown", 0
@@ -72,8 +72,9 @@ def identify_from_image(face_img, threshold=0.60):
         l = clahe.apply(l)
         face_img = cv2.cvtColor(cv2.merge([l, a, b]), cv2.COLOR_LAB2BGR)
 
+        # Standardise size for consistency
         face_resized = cv2.resize(face_img, (160, 160))
-        roi_emb = DeepFace.represent(img_path=face_resized, model_name="Facenet", enforce_detection=False)[0]["embedding"]
+        roi_emb = DeepFace.represent(img_path=face_resized, model_name="Facenet512", enforce_detection=False)[0]["embedding"]
         best_name, best_dist = "Unknown", float("inf")
         for student_name, emb_list in known_embeddings.items():
             for known_emb in emb_list:
@@ -84,7 +85,8 @@ def identify_from_image(face_img, threshold=0.60):
                     best_name = student_name
         print(f"[MATCH] Best: {best_name}, dist: {best_dist:.4f}, threshold: {threshold}")
         if best_dist < threshold:
-            return best_name, int((1 - best_dist) * 100)
+            # Confidence for Facenet512: 1.0 dist is 0%, 0.0 is 100%
+            return best_name, int((1 - (best_dist / 0.8)) * 100)
     except Exception as e:
         print(f"[ERROR] identify_from_image: {e}")
     return "Unknown", 0
@@ -371,7 +373,7 @@ def detect_faces_in_frame(frame):
         faces = []
         for i in range(detections.shape[2]):
             conf = float(detections[0, 0, i, 2])
-            if conf < 0.5:
+            if conf < 0.35: # Lowered to catch more faces
                 continue
             x1 = int(detections[0, 0, i, 3] * w)
             y1 = int(detections[0, 0, i, 4] * h)
@@ -380,7 +382,7 @@ def detect_faces_in_frame(frame):
             x1, y1 = max(0, x1), max(0, y1)
             x2, y2 = min(w, x2), min(h, y2)
             fw, fh = x2 - x1, y2 - y1
-            if fw > 20 and fh > 20:
+            if fw > 45 and fh > 45: # Filter small noise
                 faces.append((x1, y1, fw, fh))
         return faces
     else:
@@ -421,7 +423,7 @@ def process_video_thread(job_id, video_path):
     current_labels = []
     frame_idx = 0
     # Use a relaxed threshold for video frames (blurrier than registration photos)
-    VIDEO_THRESHOLD = 0.65
+    VIDEO_THRESHOLD = 0.45
 
     while cap.isOpened():
         ret, frame = cap.read()
