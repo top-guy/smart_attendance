@@ -2,3 +2,7 @@ flask
 pandas
 opencv-python
 deepface
+mediapipe
+numpy
+tensor flow
+tf-keras
