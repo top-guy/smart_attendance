@@ -4,5 +4,5 @@ opencv-python
 deepface
 mediapipe
 numpy
-tensor flow
+tensorflow
 tf-keras
